@@ -1,4 +1,4 @@
-package com.castillo.web;
+package com.rubens.web;
 
 public class Cantante implements Persona{
 

@@ -1,4 +1,4 @@
-package com.castillo.web;
+package com.rubens.web;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
