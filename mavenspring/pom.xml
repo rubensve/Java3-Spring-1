@@ -2,13 +2,17 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.castillo</groupId>
+  <groupId>com.rubens</groupId>
   <artifactId>mavenspring</artifactId>
   <packaging>war</packaging>
   <version>1.0</version>
 
   <name>mavenspring</name>
   <url>http://maven.apache.org</url>
+  <properties>
+      <spring.version>4.0.5.RELEASE</spring.version>
+    </properties>
+
 
   <dependencies>
     <dependency>
@@ -26,12 +30,12 @@
     <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-context</artifactId>
-        <version>4.0.5.RELEASE</version>
+        <version>${spring.version}</version>
     </dependency>
     <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-webmvc</artifactId>
-        <version>4.0.5.RELEASE</version>
+        <version>${spring.version}</version>
     </dependency>
   </dependencies>
 
@@ -48,4 +52,5 @@
       </plugin>
     </plugins>
   </build>
+    
 </project>
