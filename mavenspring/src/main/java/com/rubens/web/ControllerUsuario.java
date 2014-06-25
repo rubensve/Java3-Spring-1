@@ -1,5 +1,6 @@
 package com.rubens.web;
 
+import org.codehaus.jackson.map.ObjectMapper;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -14,6 +15,20 @@ public class ControllerUsuario {
 public @ResponseBody String buscarTodos(){
 String mensaje="Probando el metodo get para enviar a todos los usuarios";    
 return mensaje;
-
 }
+
+@RequestMapping(value="/usuario", method=RequestMethod.GET, headers=("Accept=Application/json"))
+
+@ResponseBody String mijason(){
+ObjectMapper mapeadorjson= new ObjectMapper();
+    
+    return null;
+};
+
+
+
+
+
+
+
 }
