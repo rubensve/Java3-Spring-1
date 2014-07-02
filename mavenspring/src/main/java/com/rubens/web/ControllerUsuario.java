@@ -1,5 +1,7 @@
 package com.rubens.web;
-
+import com.rubens.model.DAOUsuarioImpl;
+import com.rubens.model.Usuario;
+import java.util.ArrayList;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -24,6 +26,12 @@ ObjectMapper mapeadorjson= new ObjectMapper();
     
     return null;
 };
+
+@RequestMapping(value ="/nuevo", method = RequestMethod.GET, headers =("Accept=Application/json"))
+@ResponseBody ArrayList<Usuario> leerarray(){
+   
+ return  DAOUsuarioImpl.implementacion();
+}
 
 
 
