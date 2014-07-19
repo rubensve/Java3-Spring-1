@@ -11,6 +11,7 @@
   <url>http://maven.apache.org</url>
   <properties>
       <spring.version>4.0.5.RELEASE</spring.version>
+    <netbeans.hint.deploy.server>Tomcat</netbeans.hint.deploy.server>
   </properties>
 
   <dependencies>
@@ -41,9 +42,7 @@
       <artifactId>hibernate-core</artifactId>
       <version>4.3.5.Final</version>
     </dependency>
-    
-    
-    
+   
     <dependency>
 	<groupId>mysql</groupId>
 	<artifactId>mysql-connector-java</artifactId>
